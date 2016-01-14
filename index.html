@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Retrans - formation</title>
+
+		<meta name="description" content="The slides used to teach companies to code like hackers.">
+		<meta name="author" content="Ants">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Data-science</h1>
+					<h3>TEST MODIF</h3>
+					<p>
+						<small>par <a href="http://ants.builders">ants</a> / <a href="http://twitter.com/beingAnts">@beingAnts</a></small>
+					</p>
+				</section>
+				<!-- Ajout slide-->
+				<section>
+					<section data-transition="slide" data-background="http://i41.servimg.com/u/f41/09/01/14/42/danse110.gif" data-background-transition="zoom">
+						<h1>PROUT</h1>
+						<h2>REPROUT</h2>
+						<p>
+							<small>par <a href="http://ants.builders">ants</a> / <a href="http://twitter.com/beingAnts">@beingAnts</a></small>
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="http://www.image-gif.com/wp-content/uploads/2015/06/Un-singe-qui-danse.gif" alt="Down arrow">
+						</a>
+						<aside class="notes">
+							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						</aside>
+					</section>
+					<section data-transition="slide" data-background="http://www.centresocial-oustal.fr/site/wp-content/uploads/2015/10/bowling.jpg" data-background-transition="zoom">
+						<h1>TUTU</h1>
+						<h2>TOTO</h2>
+						<p>
+							<small>par <a href="http://ants.builders">ants</a> / <a href="http://twitter.com/beingAnts">@beingAnts</a></small>
+						</p>
+						<aside class="notes">
+							Notes
+						</aside>
+					</section>
+				</section>
+
+				<!-- Intro formation -->
+				<section>
+					<section>
+						<h2>Objectif</h2>
+						<p>
+							Vous rendre
+							<span class="fragment highlight-blue">organisés</span>,
+							<span class="fragment highlight-blue">armés</span> et
+							<span class="fragment highlight-blue">autonomes</span>
+							pour apprendre de la <span class="fragment highlight-red">data-science</span> par la pratique.
+						</p>
+					</section>
+
+					<section>
+						<h2>Programme</h2>
+							<ol>
+								<li>travailler à plusieurs</li>
+								<li>les langages du web</li>
+								<li>dataviz: tableau de bord de consommation d'eau (3 jours)</li>
+								<li>...</li>
+							</ol>
+						</p>
+					</section>
+
+					<section>
+						<h2>Spirit</h2>
+							<ol>
+								<li>NOS outils sur VOS projets avec VOS data</li>
+								<li>on couvre large, vous hackez le reste</li>
+								<li>support</li>
+							</ol>
+						</p>
+					</section>
+
+				</section>
+
+				<!-- git -->
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<section>
+						<h1>Git</h1>
+						<h3>organiser son code et son travail</h3>
+					</section>
+					<!-- intro git github -->
+					<section>
+						<h2>Git / GitHub</h2>
+						<p>Git: gestionnaire de version (sur votre ordinateur)</p>
+						<p>GitHub: plateforme d'échange (sur le cloud)</p>
+					</section>
+					<section>
+						<p>
+							Git évite de dupliquer du code pour le versioner, permet de revenir en arrière et surtout permet de toujours savoir où on en est.
+						</p>
+						<p>
+							Outils indispensable pour organiser son travail sur un gros projet.
+						</p>
+					</section>
+					<section>
+						<p>GitHub permet de s'échanger du code, de travailler à plusieurs sur un même projet et de communiquer sur les problèmes.</p>
+						<p>GitHub permet en outre de déployer des services et de recruter.</p>
+					</section>
+
+					<!-- environement de travail -->
+					<section>
+						<h2>Environnement de travail</h2>
+						<ul>
+							<li>Editeur : <a href="https://atom.io/">Atom</a>, <a href="http://www.sublimetext.com/3">Sublime</a></li>
+							<li>Console : iTerm2 (mac), <a href="https://conemu.github.io/">ConEmu</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Configurer git</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+// dans le cas où vous êtes derrière un proxy
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+
+// si vous ne l'avez jamais fait auparavant
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+
+// pour windows
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+						</code></pre>
+					</section>
+
+					<!-- boucle 1 status/add/commit/ -->
+					<!-- init -->
+					<section>
+						<h2>Init</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+// créer un dossier
+mkdir testgit
+// s'y déplacer
+cd testgit
+// initialison git
+git init
+						</code></pre>
+						<p>ce qui crée un dossier `.git` contenant tout ce qui concerne git. C'est léger.</p>
+					</section>
+					<!-- status -->
+					<section>
+						<h2>Status</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git status
+						</code></pre>
+						<p>donne:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+						</code></pre>
+					</section>
+					<section>
+						<h2>Status</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+touch testFile.txt
+						</code></pre>
+						<p>après ce fichier crée, status donne:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+
+	testFile.txt
+						</code></pre>
+					</section>
+
+					<!-- add -->
+					<section>
+						<h2>add</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git add testFile.txt
+						</code></pre>
+						<p>indique a git qu'on veut le versioner</p>
+						<pre><code class="hljs" data-trim contenteditable>
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   testFile.txt
+						</code></pre>
+					</section>
+
+					<!-- commit -->
+					<section>
+						<h2>commit</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git commit
+						</code></pre>
+						<p>ouvre un éditeur (vim, nano) pour nommer le commit.</p>
+						<p>Une alternative rapide:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git commit -m"added empty file to project"
+						</code></pre>
+						<p>faites un status pour voir...</p>
+					</section>
+
+					<!-- loop -->
+					<section>
+						<p>On itère au fur et a mesure des changements qu'on veut persister :</p>
+						<pre><code class="hljs" data-trim contenteditable>
+// on ajoute une ligne au fichier (normalement utiliser l'éditeur)
+echo "hello" > testFile.txt
+git status
+git commit -am"added hello to the file"
+						</code></pre>
+					</section>
+
+
+					<!-- diff -->
+					<section>
+						<h2>diff</h2>
+						<p>faites une modification</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git diff
+						</code></pre>
+						<p>indique les changements par rapport au dernier commit</p>
+						<pre><code class="hljs" data-trim contenteditable>
+-hello
++bonjour
+						</code></pre>
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>Chaque commit permet de poser une bouée pour repérer un état du code.</p>
+						<img width="300" data-src="https://www.atlassian.com/wac/landing/git/tutorial/pageSections/00/pageSections/0/contentColumnTwo/0/imageBinary/git_training-basics.png" alt="Down arrow">
+					</section>
+
+					<!-- log -->
+					<section>
+						<h2>log</h2>
+						<p>Pour avoir une vue de l'histoire</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git log
+						</code></pre>
+						<pre><code class="hljs" data-trim contenteditable>
+commit 5bf345af8448979acd16ec07621561f8628211fa
+Author: vallettea <vallettea@gmail.com>
+Date:   Mon Jan 11 19:53:32 2016 +0100
+
+    changed hello in bonjour
+
+commit 2dc24bc314fc92fcbf20261ef80ec203088044d9
+Author: vallettea <vallettea@gmail.com>
+Date:   Mon Jan 11 19:32:26 2016 +0100
+
+    added hello to the file
+
+commit c04b81108300ebbe9d367d21c603ae9e3089d55e
+Author: vallettea <vallettea@gmail.com>
+Date:   Mon Jan 11 19:22:51 2016 +0100
+
+    added empty file to project
+						</code></pre>
+					</section>
+
+					<!-- checkout -->
+					<section>
+						<h2>checkout #commit</h2>
+						<p>Pour se déplacer dans l'histoire</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout 2dc24bc314f
+						</code></pre>
+						<p>Si vous regardez votre fichier, vous verrez qu'il est revenu à l'état où il y avait hello. Pour revenir au dernier état</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout master
+						</code></pre>
+						<p>Attention: pour se déplacer dans l'histoire, il faut être "clean", c'est-à-dire ne pas avoir de modifications non-commitées.</p>
+					</section>
+
+					<!-- checkout uncommited changes -->
+					<section>
+						<h2>checkout #file</h2>
+						<p>Pour revenir au dernier commit  </p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout testFile.txt
+						</code></pre>
+						<p>va remmetre le fichier tel qu'il était au dernier commit. Pour faire la même chose avec tous les fichiers à la fois (dans le cas d'un projet complet): </p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout --hard HEAD
+						</code></pre>
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>On utilise log et checkout pour naviguer dans l'histoire des commits</p>
+						<img width="300" data-src="https://www.atlassian.com/wac/landing/git/tutorial/pageSections/00/pageSections/00/contentColumnTwo/0/imageBinary/git-training-undoing-changes.png" alt="Down arrow">
+					</section>
+
+
+
+					<!-- branch -->
+					<section>
+						<h2>branch</h2>
+						<p>Pour créer une branche quand on est clean:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git branch newVersion
+						</code></pre>
+						<p>Lister les branches</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git branch
+						</code></pre>
+						<p>se mettre sur la branche</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout newVersion
+						</code></pre>
+						<p>ou, si on a déjà fait des modifications, qu'elles parraissent importantes et qu'on veut les séparer sur une nouvelle branche</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout -b newVersion
+						</code></pre>
+					</section>
+					<section>
+						<h2>branch</h2>
+						<p>Pour voir où on en est: </p>
+						<pre><code class="hljs" data-trim contenteditable>
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
+						</code></pre>
+						<p>(se faire un alias) donne: </p>
+						<pre><code class="hljs" data-trim contenteditable>
+* ae5830b 2016-01-11 | added a third file (HEAD -> newVersion) [vallettea]
+| * 58f41af 2016-01-11 | added a second file (master) [vallettea]
+|/
+* 5bf345a 2016-01-11 | changed hello in bonjour [vallettea]
+* 2dc24bc 2016-01-11 | added hello to the file [vallettea]
+* c04b811 2016-01-11 | added empty file to project [vallettea]						</code></pre>
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>Les branches permettent d'organiser ses modifications</p>
+						<img width="300" data-src="https://www.atlassian.com/wac/landing/git/tutorial/pageSections/00/pageSections/01/contentColumnTwo/0/imageBinary/git-tutorial-branching-merge-1.png" alt="Down arrow">
+					</section>
+
+					<!-- merge -->
+					<section>
+						<h2>merge</h2>
+						<p>Remettons nous sur master</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout master
+						</code></pre>
+						<p>et apportons tous les changements fait sur newVersion sur master :</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git merge newVersion
+						</code></pre>
+					</section>
+					<section>
+						<h2>merge</h2>
+						<p>Pour voir où on en est: </p>
+						<pre><code class="hljs" data-trim contenteditable>
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
+						</code></pre>
+						<p>(se faire un alias) donne: </p>
+						<pre><code class="hljs" data-trim contenteditable>
+*   867fdd6 2016-01-11 | Merge branch 'newVersion' (HEAD -> master) [vallettea]
+|\
+| * ae5830b 2016-01-11 | added a third file (newVersion) [vallettea]
+* | 58f41af 2016-01-11 | added a second file [vallettea]
+|/
+* 5bf345a 2016-01-11 | changed hello in bonjour [vallettea]
+* 2dc24bc 2016-01-11 | added hello to the file [vallettea]
+* c04b811 2016-01-11 | added empty file to project [vallettea]
+						</code></pre>
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>Merger sert a faire converger les modifications crées sur les branches vers une version finale.</p>
+						<img width="300" data-src="https://www.atlassian.com/wac/landing/git/tutorial/pageSections/00/pageSections/02/contentColumnTwo/0/imageBinary/git-tutorial-rewriting-history-1.png" alt="Down arrow">
+					</section>
+
+					<!-- pour aller plus loin  -->
+					<section>
+						<h3>Pour aller plus loin :</h3>
+						<ul>
+							<li>git stash</li>
+							<li>.gitignore</li>
+							<li><a href="http://gitimmersion.com/lab_11.html">alias dans .gitconfig</a></li>
+						</ul>
+					</section>
+
+					<!-- ressources  -->
+					<section>
+						<h3>Ressources :</h3>
+						<ul>
+							<li><a href="http://www.git-scm.com/doc">doc officielle</a></li>
+							<li><a href="http://pcottle.github.io/learnGitBranching/">tutorial interactif</a></li>
+							<li><a href="https://try.github.io/levels/1/challenges/1">git command line simulator</a></li>
+							<li><a href="http://gitimmersion.com">bon tutorial</a></li>
+							<li><a href="https://www.atlassian.com/pt/git/">autre bonne documentation</a></li>
+						</ul>
+					</section>
+
+
+				</section>
+
+
+
+
+				<!-- github -->
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<section>
+						<h1>GitHub</h1>
+						<h3>Travailler à plusieurs</h3>
+					</section>
+
+					<section>
+						<h2>GitHub permet de :</h2>
+						<ul>
+							<li>stocker son code en ligne</li>
+							<li>travailler à plusieurs sur un même code</li>
+							<li>communiquer entre membre d'une équipe</li>
+							<li>documenter</li>
+							<li>déployer</li>
+							<li>embaucher ...</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Crée un répertoire (repo)</h2>
+						<img width="600" data-src="img/create_repo.png">
+					</section>
+
+					<section>
+						<h2>Remote</h2>
+						<p>Remote indique le chemin entre ce repo vers un dépot github :</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git remote add anthill https://github.com/anthill/training.git
+git push -u anthill master
+						</code></pre>
+						<p>où <code>anthill</code> est le nom du dépot. Un repo peut avoir plusieur remote (voir fork).</p>
+					</section>
+
+					<section>
+						<h2>push</h2>
+						<p>Pour synchroniser un repo local avec un remote, on utilise d'une part :</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git push -u anthill master
+						</code></pre>
+						<p>où <code>master</code> est le nom de la branche qu'on veut synchroniser. </p>
+						<p><code>push</code> s'utilise lorsque le repo local est en avance sur le remote.</p>
+						<pre><code class="hljs" data-trim contenteditable>
+Counting objects: 101, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (93/93), done.
+Writing objects: 100% (101/101), 1.46 MiB | 145.00 KiB/s, done.
+Total 101 (delta 17), reused 0 (delta 0)
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>pull</h2>
+						<p>Si le remote est en avance sur le repo local (quelqu'un a ajouté du code) on utilise :</p>
+						<pre><code class="hljs" data-trim contenteditable>
+git pull anthill master
+						</code></pre>
+						<p>où <code>master</code> est le nom de la branche qu'on veut synchroniser. </p>
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>Avec <code>remote, push et pull</code> vous pouvez synchoniser votre code dans le cloud (sauvegarde)</p>
+						<img width="900" float="right" data-src="img/github1.svg" alt="Down arrow">
+					</section>
+
+					<!-- clone -->
+					<section>
+						<h2>clone</h2>
+						<p>Un autre dévelopeur veut travailler sur votre code :</p>
+						<img width="700" float="right" data-src="img/github_clone.png">
+						<pre><code class="hljs" data-trim contenteditable>
+git clone https://github.com/anthill/training.git
+						</code></pre>
+						<p>va crée une copie locale de votre remote. </p>
+						<p><small>(que donne <code>git remote -v</code> ?)</small></p>
+					</section>
+
+					<!-- fork -->
+					<section>
+						<h2>fork</h2>
+						<p>Au lieu de créer une copie de votre remote sur son local, il vaut mieux que le contributeur fasse une copie de votre remote sur un remote à lui. C'est la combinaison fork/clone.</p>
+
+						<p><small>(que donne <code>git remote -v</code> ?)</small></p>
+					</section>
+
+					<!-- pull request -->
+					<section>
+						<h2>pull request</h2>
+						<p>Lorsqu'un contributeur estime que les modification de son code devraient être incorporées à la version principale, il met synchronise son remote et crée un <code>pull request</code></p>
+						<img width="700" float="right" data-src="https://www.packtpub.com/sites/default/files/Article-Images/B03497_04_01.png">
+					</section>
+
+					<!-- schema -->
+					<section>
+						<h2>Résumé</h2>
+						<p>Les pull request de forks permettent d'intégrer les contributions:</p>
+						<img width="900" float="right" data-src="img/github2.svg">
+					</section>
+
+					<!-- markdown -->
+					<section>
+						<h2>Ecrire vite et bien en markdown</h2>
+						<p>Toutes les zones de texte de github permettent d'écrire en markdown</p>
+					</section>
+
+					<!-- les features de github  -->
+					<section>
+						<h3>Les incontournables de github :</h3>
+						<ul>
+							<li>issues</li>
+							<li>pull request</li>
+							<li>milestones</li>
+							<li>wiki</li>
+							<li>metriques</li>
+						</ul>
+					</section>
+
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<style type="text/css">
+			.reveal section img {
+			    background: none;
+			    border: none;
+			    box-shadow: none;
+			}
+		</style>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			// to make iframe background clickable
+			Reveal.addEventListener('slidechanged', function(event) {
+			     if($(event.currentSlide).attr('data-background-iframe')) {
+			          $('.reveal > .backgrounds').css('z-index', 1);
+			     } else {
+			          $('.reveal > .backgrounds').css('z-index', 0);
+			     }
+			});
+
+		</script>
+
+	</body>
+</html>
